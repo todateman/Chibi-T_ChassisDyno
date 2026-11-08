@@ -17,6 +17,14 @@
 | 概算予算 | 最小構成 約 38 万円 ／ 推奨構成 約 100 万円（予備費 15% 込み、TP-20KCE は保有品） |
 | エンジン（実走推定） | 最大 0.95 PS（0.70 kW）@ 3,600 rpm、最大トルク 2.2 N·m @ 2,600 rpm（全開） |
 
+## 概略図（検討中の構成）
+
+![負荷付きシャシーダイナモの概略図](docs/images/dyno_schematic.svg)
+
+機械構成（上）と電気・制御の構成（下）。PNG 版は [docs/images/dyno_schematic.png](docs/images/dyno_schematic.png)。
+
+## 鈴鹿東コースの負荷
+
 ![鈴鹿東コース 定常周回とダイナモの負荷指令](figures/suzuka_dyno_requirements.png)
 
 ## 資料

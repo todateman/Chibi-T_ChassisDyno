@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1080" width="1400" height="1080" font-family="'Noto Sans CJK JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2c6fbb"/></marker>
+    <marker id="arR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7b3fa0"/></marker>
+    <marker id="arK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#888" stroke-width="2"/></pattern>
+    <pattern id="chain" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#bbb"/><circle cx="3" cy="3" r="1.4" fill="#666"/></pattern>
+  </defs>
+  <style>
+    .panel{fill:#fbfbfb;stroke:#d0d0d0;stroke-width:1.5}
+    .title{font-size:20px;font-weight:700;fill:#222}
+    .sub{font-size:13px;fill:#666}
+    .lbl{font-size:14px;fill:#222}
+    .sm{font-size:12px;fill:#444}
+    .num{font-size:13px;fill:#222}
+    .axle{stroke:#555;stroke-width:4}
+    .roller{fill:#d6d6d6;stroke:#555;stroke-width:1.5}
+    .brg{fill:#3d6b5a;stroke:#22443a}
+    .spk{fill:#444}
+    .lead{stroke:#888;stroke-width:1;fill:none}
+    .blk{fill:#fff;stroke:#555;stroke-width:1.5;rx:8}
+    .bt{font-size:14px;font-weight:700;fill:#222}
+    .bs{font-size:12px;fill:#444}
+    .pw{stroke:#c0392b;stroke-width:3.5;fill:none}
+    .sg{stroke:#2c6fbb;stroke-width:2;fill:none}
+    .can{stroke:#7b3fa0;stroke-width:2.5;fill:none;stroke-dasharray:8 4}
+    .mech{stroke:#888;stroke-width:3;fill:none;stroke-dasharray:3 4}
+  </style>
+
+  <!-- ===================== ① 機械構成 ===================== -->
+  <rect class="panel" x="16" y="16" width="1368" height="584" rx="10"/>
+  <text class="title" x="36" y="50">① 機械構成（上から見た概略・縮尺なし）</text>
+  <text class="sub" x="36" y="72">ローラ φ105 × 2 → チェーン 2 段（全体 2.105 倍に増速）→ フライホイール軸 → 同軸のモーター（揺動支持）→ 反トルクを TP-20KCE で台へ</text>
+
+  <!-- ガード -->
+  <rect x="566" y="206" width="236" height="358" fill="none" stroke="#e08a00" stroke-width="1.5" stroke-dasharray="8 5" rx="6"/>
+  <text class="sm" x="574" y="224" fill="#b06a00">ガード（チェーン・フライホイール）</text>
+
+  <!-- フリーローラ -->
+  <line class="axle" x1="300" y1="150" x2="542" y2="150"/>
+  <rect class="brg" x="296" y="139" width="12" height="22"/>
+  <rect class="brg" x="532" y="139" width="12" height="22"/>
+  <rect class="roller" x="330" y="133" width="180" height="34" rx="4"/>
+  <text class="lbl" x="448" y="124">フリーローラ φ105（ミノウラ）</text>
+
+  <!-- 駆動ローラ -->
+  <line class="axle" x1="262" y1="250" x2="612" y2="250"/>
+  <rect class="brg" x="296" y="239" width="12" height="22"/>
+  <rect class="brg" x="532" y="239" width="12" height="22"/>
+  <rect class="roller" x="330" y="233" width="180" height="34" rx="4"/>
+  <text class="lbl" x="448" y="292">駆動ローラ φ105</text>
+  <rect class="spk" x="596" y="222" width="8" height="56"/>
+  <text class="sm" x="612" y="266">42T</text>
+  <!-- エンコーダー -->
+  <rect x="178" y="236" width="84" height="28" fill="#e8f0fb" stroke="#2c6fbb" rx="4"/>
+  <text class="sm" x="185" y="255">エンコーダー</text>
+  <text class="sm" x="150" y="284">1,000 P/R 以上（R-S-01）</text>
+
+  <!-- 駆動輪（上から見ると細長い） -->
+  <rect x="405" y="112" width="30" height="176" rx="13" fill="#2b2b2b" opacity="0.88"/>
+  <text class="lbl" x="340" y="205">駆動輪 →</text>
+
+  <!-- 中間軸 -->
+  <line class="axle" x1="562" y1="350" x2="700" y2="350"/>
+  <rect class="brg" x="566" y="339" width="12" height="22"/>
+  <rect class="brg" x="680" y="339" width="12" height="22"/>
+  <rect class="spk" x="596" y="322" width="8" height="56"/>
+  <rect class="spk" x="636" y="325" width="8" height="50"/>
+  <text class="sm" x="570" y="396">42T</text>
+  <text class="sm" x="650" y="334">40T</text>
+  <text class="sm" x="706" y="346">中間軸（P203）</text>
+  <!-- チェーン 1・2 -->
+  <rect x="597" y="250" width="6" height="100" fill="url(#chain)"/>
+  <text class="sm" x="612" y="306">チェーン 1（1:1）</text>
+  <rect x="637" y="350" width="6" height="120" fill="url(#chain)"/>
+  <text class="sm" x="380" y="414">チェーン 2（40:19 = 2.105 倍）</text>
+  <line class="lead" x1="572" y1="410" x2="634" y2="410"/>
+
+  <!-- フライホイール軸 -->
+  <line class="axle" x1="624" y1="470" x2="1146" y2="470"/>
+  <rect class="spk" x="636" y="452" width="8" height="36"/>
+  <text class="sm" x="626" y="506">19T</text>
+  <rect class="brg" x="676" y="459" width="12" height="22"/>
+  <rect class="brg" x="768" y="459" width="12" height="22"/>
+  <rect x="716" y="396" width="14" height="148" fill="#9a9a9a" stroke="#555"/>
+  <text class="sm" x="576" y="586">フライホイール φ300 × t10.5（推定）</text>
+  <text class="sm" x="694" y="388">P204</text>
+
+  <!-- カップリング（フライホイール軸 → モーター軸） -->
+  <rect x="804" y="458" width="18" height="24" fill="#c9c9c9" stroke="#555" rx="3"/>
+
+  <!-- モーター（揺動支持） -->
+  <rect x="826" y="452" width="10" height="36" fill="#3d6b5a" stroke="#22443a"/>
+  <rect x="840" y="430" width="124" height="80" fill="#dce9f7" stroke="#2c6fbb" stroke-width="2" rx="6"/>
+  <text class="bt" x="856" y="466" fill="#1d4f8c">モーター</text>
+  <text class="sm" x="852" y="486">48 V・1 kW 級</text>
+  <text class="sm" x="852" y="502">9,000 rpm 以上</text>
+  <rect x="968" y="452" width="10" height="36" fill="#3d6b5a" stroke="#22443a"/>
+  <text class="sm" x="818" y="546">揺動支持の軸受</text>
+  <line class="lead" x1="831" y1="490" x2="846" y2="532"/>
+  <line class="lead" x1="973" y1="490" x2="890" y2="532"/>
+
+  <!-- トルクアームとストッパー -->
+  <line x1="930" y1="430" x2="930" y2="372" stroke="#1d4f8c" stroke-width="5"/>
+  <line x1="930" y1="372" x2="972" y2="372" stroke="#1d4f8c" stroke-width="5"/>
+  <rect x="978" y="356" width="14" height="32" fill="url(#hatch)" stroke="#555"/>
+    <text class="sm" x="996" y="370">過負荷ストッパー ±2.3 N·m</text>
+  <text class="sm" x="996" y="386">すき間 約 1.2 mm（調整ねじ）</text>
+
+  <!-- FC-2B → TP-20KCE → FC-2B → 台 -->
+  <rect x="984" y="458" width="20" height="24" fill="#c9c9c9" stroke="#555" rx="3"/>
+  <rect x="1012" y="436" width="74" height="68" fill="#fde7c8" stroke="#d07a00" stroke-width="2.5" rx="8"/>
+  <text class="bt" x="1018" y="468" fill="#8a4b00">TP-20KCE</text>
+  <text class="sm" x="1022" y="486">回さない</text>
+  <rect x="1094" y="458" width="20" height="24" fill="#c9c9c9" stroke="#555" rx="3"/>
+  <rect x="1140" y="440" width="22" height="60" fill="url(#hatch)" stroke="#555"/>
+  <text class="sm" x="1168" y="466">台に固定</text>
+  <text class="sm" x="972" y="530">FC-2B</text>
+  <text class="sm" x="1084" y="530">FC-2B</text>
+  <line class="lead" x1="994" y1="484" x2="990" y2="516"/>
+  <line class="lead" x1="1104" y1="484" x2="1100" y2="516"/>
+  <text class="sm" x="1012" y="560">脚（4-φ6.5、ピッチ 85×70）で台に固定</text>
+  <path d="M1066,420 q30,-40 70,-20" class="lead"/>
+  <text class="sm" x="1104" y="430" fill="#8a4b00">反トルクだけを測る</text>
+
+  <!-- 車両の拘束 -->
+  <line x1="420" y1="104" x2="420" y2="84" stroke="#444" stroke-width="2" marker-end="url(#arK)"/>
+  <line x1="420" y1="296" x2="420" y2="316" stroke="#444" stroke-width="2" marker-end="url(#arK)"/>
+  <text class="sm" x="290" y="336">車両の拘束 前後 ±200 N（R-M-10）</text>
+
+  <!-- 側面の挿入図 -->
+  <rect x="36" y="330" width="236" height="250" fill="#fff" stroke="#ccc" rx="6"/>
+  <text class="lbl" x="48" y="352">側面（駆動輪とローラ）</text>
+  <circle cx="154" cy="446" r="58" fill="#2b2b2b" opacity="0.88"/>
+  <circle cx="154" cy="446" r="22" fill="#777"/>
+  <circle cx="112" cy="510" r="19" fill="#d6d6d6" stroke="#555" stroke-width="1.5"/>
+  <circle cx="196" cy="510" r="19" fill="#d6d6d6" stroke="#555" stroke-width="1.5"/>
+  <text class="sm" x="72" y="548">フリー</text>
+  <text class="sm" x="168" y="548">駆動</text>
+  <text class="sm" x="52" y="568">接触 2 か所＝損失の一因</text>
+  <path d="M104,394 a54,54 0 0 1 40,-24" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#arR)"/>
+
+  <!-- 主要な数値 -->
+  <rect x="852" y="92" width="516" height="244" fill="#fff" stroke="#bbb" rx="8"/>
+  <text class="bt" x="868" y="118">主要な数値</text>
+  <text class="num" x="868" y="144">回転マス 105 kg 相当（ローラ軸 0.289 kg·m²）＝ 車両質量</text>
+  <text class="num" x="868" y="166">増速比 2.105（ローラ 1 回転でフライホイール・モーター 2.105 回転）</text>
+  <text class="num" x="868" y="188">80 km/h: ローラ 4,040 rpm ／ フライホイール・モーター 8,510 rpm</text>
+  <text class="num" x="868" y="210">TP-20KCE: 2 N·m ＝ ローラ表面 80 N、2.3 N·m（ストッパー）＝ 92 N</text>
+  <text class="num" x="868" y="232">　　　　　許容過負荷 120%（2.4 N·m ＝ 96 N）、最高 4,000 rpm</text>
+  <text class="num" x="868" y="254">鈴鹿 1 周の負荷: 吸収 +81 N ／ 力行 −54 N、+858 ／ −590 W</text>
+  <text class="num" x="868" y="276">現行の損失: 30 km/h で 44 N（実走の約 10 倍）</text>
+  <text class="sm" x="868" y="302" fill="#b03a2e">※ チェーンの歯数の並び（42T・40T・19T の位置）は、回転マスとの</text>
+  <text class="sm" x="868" y="320" fill="#b03a2e">　 整合から推定。実物で要確認</text>
+
+  <!-- ===================== ② 電気・制御 ===================== -->
+  <rect class="panel" x="16" y="616" width="1368" height="448" rx="10"/>
+  <text class="title" x="36" y="650">② 電気・制御の構成</text>
+  <!-- 凡例 -->
+  <line class="pw" x1="560" y1="644" x2="600" y2="644"/><text class="sm" x="606" y="649">動力（48 V・3 相）</text>
+  <line class="sg" x1="730" y1="644" x2="770" y2="644"/><text class="sm" x="776" y="649">信号</text>
+  <line class="can" x1="830" y1="644" x2="870" y2="644"/><text class="sm" x="876" y="649">CAN</text>
+  <line class="mech" x1="926" y1="644" x2="966" y2="644"/><text class="sm" x="972" y="649">機械的なつながり</text>
+
+  <!-- 1 段目: 動力 -->
+  <rect class="blk" x="40" y="676" width="200" height="64"/>
+  <text class="bt" x="54" y="702">バッテリー</text>
+  <text class="bs" x="54" y="722">48 V LiFePO4 20 Ah＋BMS</text>
+
+  <rect class="blk" x="290" y="676" width="200" height="64"/>
+  <text class="bt" x="304" y="702">主回路</text>
+  <text class="bs" x="304" y="722">コンタクタ・ヒューズ・予備充電</text>
+
+  <rect class="blk" x="560" y="676" width="210" height="64"/>
+  <text class="bt" x="574" y="702">インバーター（VESC 系）</text>
+  <text class="bs" x="574" y="722">FOC・電流制御・センサー付き</text>
+
+  <rect x="830" y="676" width="200" height="64" fill="#dce9f7" stroke="#2c6fbb" stroke-width="2" rx="8"/>
+  <text class="bt" x="844" y="702" fill="#1d4f8c">モーター</text>
+  <text class="bs" x="844" y="722">フライホイール軸に同軸</text>
+
+  <rect x="1090" y="676" width="200" height="64" fill="#fde7c8" stroke="#d07a00" stroke-width="2" rx="8"/>
+  <text class="bt" x="1104" y="702" fill="#8a4b00">TP-20KCE</text>
+  <text class="bs" x="1104" y="722">350 Ω ブリッジ・924 μV/V</text>
+
+  <line class="pw" x1="240" y1="708" x2="288" y2="708" marker-end="url(#arR)"/>
+  <line class="pw" x1="490" y1="708" x2="558" y2="708" marker-end="url(#arR)"/>
+  <line class="pw" x1="770" y1="708" x2="828" y2="708" marker-start="url(#arR)" marker-end="url(#arR)"/>
+  <text class="sm" x="786" y="692">3 相</text>
+  <line class="mech" x1="1030" y1="708" x2="1088" y2="708"/>
+  <text class="sm" x="1036" y="698">反トルク</text>
+
+  <!-- 2 段目 -->
+  <rect class="blk" x="290" y="776" width="200" height="64"/>
+  <text class="bt" x="304" y="802">ブレーキチョッパー</text>
+  <text class="bs" x="304" y="822">＋抵抗 1 kW（母線の過電圧）</text>
+  <path class="pw" d="M525,708 V808 H492" marker-end="url(#arR)"/>
+  <text class="sm" x="530" y="770">直流母線</text>
+
+  <rect class="blk" x="1090" y="776" width="200" height="64"/>
+  <text class="bt" x="1104" y="802">24 bit AD</text>
+  <text class="bs" x="1104" y="822">ADS1220 等・3.3 V 印加・1 kSPS</text>
+  <line class="sg" x1="1190" y1="740" x2="1190" y2="774" marker-end="url(#ar)"/>
+  <text class="sm" x="1196" y="762">ブリッジ 4 線</text>
+
+  <rect class="blk" x="830" y="776" width="200" height="64"/>
+  <text class="bt" x="844" y="802">エンコーダー</text>
+  <text class="bs" x="844" y="822">駆動ローラ軸・A/B/Z</text>
+
+  <!-- 制御器 -->
+  <rect x="560" y="876" width="330" height="84" fill="#eef6ee" stroke="#3a7d44" stroke-width="2.5" rx="10"/>
+  <text class="bt" x="576" y="904" fill="#245a2c">制御器（Teensy 4.1 / STM32）</text>
+  <text class="bs" x="576" y="924">力・速度のループ 1 kHz、勾配表の参照 100 Hz</text>
+  <text class="bs" x="576" y="944">モード: 加速度型・定速度・定力・コース再現・惰行</text>
+
+  <!-- 制御器との接続 -->
+  <path class="can" d="M665,876 V742" marker-start="url(#arP)" marker-end="url(#arP)"/>
+  <text class="sm" x="676" y="770">CAN</text>
+  <text class="sm" x="676" y="786">トルク指令 ↓</text>
+  <text class="sm" x="676" y="802">速度・電流・温度 ↑</text>
+  <path class="sg" d="M930,840 V900 H892" marker-end="url(#ar)"/>
+  <path class="sg" d="M1190,840 V920 H892" marker-end="url(#ar)"/>
+  <text class="sm" x="1030" y="914">SPI</text>
+
+  <!-- 3 段目 -->
+  <rect class="blk" x="40" y="876" width="200" height="64"/>
+  <text class="bt" x="54" y="902">非常停止（2 か所）</text>
+  <text class="bs" x="54" y="922">主回路・点火・制御器を一斉に</text>
+  <path class="sg" d="M140,876 V758 H310 V742" marker-end="url(#ar)"/>
+  <line class="sg" x1="240" y1="918" x2="558" y2="918" marker-end="url(#ar)"/>
+
+  <rect class="blk" x="290" y="976" width="200" height="64"/>
+  <text class="bt" x="304" y="1002">PC</text>
+  <text class="bs" x="304" y="1022">勾配表・走行抵抗の設定、記録</text>
+  <path class="sg" d="M490,1008 H700 V962" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <text class="sm" x="560" y="1000">USB</text>
+
+  <rect class="blk" x="964" y="976" width="190" height="64"/>
+  <text class="bt" x="978" y="1002">ECU（UNO R4）</text>
+  <text class="bs" x="978" y="1022">点火停止の入力・同期</text>
+  <path class="sg" d="M780,960 V1008 H962" marker-end="url(#ar)"/>
+  <text class="sm" x="790" y="1000">点火停止・同期パルス</text>
+
+  <rect class="blk" x="1176" y="976" width="196" height="64"/>
+  <text class="bt" x="1190" y="1002">ロガー</text>
+  <text class="bs" x="1190" y="1022">GNSS 入力に NMEA を入れる</text>
+  <path class="sg" d="M890,948 H1166 V1008 H1174" marker-end="url(#ar)"/>
+  <text class="sm" x="904" y="942">UART NMEA（GPS の模擬・HIL）</text>
+
+  <!-- 制御則 -->
+  <rect x="40" y="958" width="236" height="96" fill="#fff" stroke="#bbb" rx="8"/>
+  <text class="bt" x="52" y="980">負荷の指令（R-C）</text>
+  <text class="sm" x="52" y="1000">F = M·g·(Crr + sinθ(s)) + M·k·v²</text>
+  <text class="sm" x="52" y="1018">　 + (M − M_eq)·a − F_loss(v)</text>
+  <text class="sm" x="52" y="1040">T_motor = F · 0.0525 m ÷ 2.105</text>
+</svg>
