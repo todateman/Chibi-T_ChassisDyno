@@ -51,7 +51,7 @@ T  = Pe / (2π·rpm/60)                        （エンジントルク）
 
 ## 2. 現行ダイナモのログ（LOG0650）
 
-AkiRacing の構成の加速度型（φ80 ローラ、3 倍増速のフライホイール、回転マス 105 kg 相当）で、0→約 40 km/h の全開加速を 3〜4 回行ったログ。スクリプトは [`analysis/dyno_log_analysis.py`](../analysis/dyno_log_analysis.py)、結果は [`data/derived/dyno_LOG0650.json`](../data/derived/dyno_LOG0650.json)。
+AkiRacing の記事を参考に作った加速度型（ミノウラのローラ台のローラ φ105、40:19 で増速したフライホイール、回転マス 105 kg 相当）で、0→約 40 km/h の全開加速を 3〜4 回行ったログ。スクリプトは [`analysis/dyno_log_analysis.py`](../analysis/dyno_log_analysis.py)、結果は [`data/derived/dyno_LOG0650.json`](../data/derived/dyno_LOG0650.json)。
 
 ### ダイナモ自体の損失
 
@@ -69,7 +69,7 @@ F_loss = 15.58 + 1.501·v + 0.2309·v²   [N]（v は m/s）
 | 40 km/h | 60.8 N | 外挿 |
 | 75 km/h | 147 N | 外挿（参考値） |
 
-主な原因は小径ローラ（φ80）でのタイヤの転がり損失と考えられる。戦略ファイルの `burn.drum_decel` 0.5 m/s²（≒ 52 N）とも同程度。
+主な原因は小径ローラ（φ105）でのタイヤの転がり損失と考えられる（ローラが 2 本なら接触が 2 か所）。内訳はまだ測っていない。戦略ファイルの `burn.drum_decel` 0.5 m/s²（≒ 52 N）とも同程度。
 
 ### 出力の推定と実走との差
 
@@ -128,10 +128,10 @@ F_loss = 15.58 + 1.501·v + 0.2309·v²   [N]（v は m/s）
 | --- | --- | --- | --- | --- | --- |
 | 乾、損失ゼロ、M_eq = M | −54〜+81 | −590〜+858 | 54% | 44 / 23 | [`suzuka_lap_load_dry.csv`](../data/derived/suzuka_lap_load_dry.csv) |
 | 雨、損失ゼロ | −53〜+83 | −576〜+619 | 55% | 43 / 26 | [`suzuka_lap_load_rain.csv`](../data/derived/suzuka_lap_load_rain.csv) |
-| 乾、現行 φ80 の損失を差引（外挿を含む） | −158〜+42 | −3,175〜+309 | 28% | 8 / 168 | [`suzuka_lap_load_dry_with_loss.csv`](../data/derived/suzuka_lap_load_dry_with_loss.csv) |
+| 乾、現行 φ105 の損失を差引（外挿を含む） | −158〜+42 | −3,175〜+309 | 28% | 8 / 168 | [`suzuka_lap_load_dry_with_loss.csv`](../data/derived/suzuka_lap_load_dry_with_loss.csv) |
 
 ![鈴鹿東コース 定常周回とダイナモの負荷指令](../figures/suzuka_dyno_requirements.png)
 
 - 雨の条件では、S 字の加速が 1,169 m からと早く始まり（下りを 55 km/h に抑えるため）、燃料は 3.38 ml/周、1 周は 245 秒。
 - 指令の変化は最大 33 N/s と遅い。燃焼中の駆動力は 72〜98 N（10 km/h での坂道発進では約 130 N）。
-- **吸収しかできない負荷装置では 1 周の約半分を再現できない**。現行の φ80 ダイナモでは損失が大きすぎ、1 周の約 3/4 が力行になる。
+- **吸収しかできない負荷装置では 1 周の約半分を再現できない**。現行の φ105 ダイナモでは損失が大きすぎ、1 周の約 3/4 が力行になる。
