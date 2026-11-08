@@ -1,0 +1,127 @@
+{
+  "_comment": "鈴鹿東コースの燃費優先の走り方のうち、ダイナモの負荷計算に使う項目だけを抜き出した写し。原本は todateman/UNOR4_Chibi-T_EFI の tools/strategy/suzuka_2027.json（コミット 3ad6982）。原本が更新されたら写し直す。",
+  "source": {
+    "repo": "todateman/UNOR4_Chibi-T_EFI",
+    "path": "tools/strategy/suzuka_2027.json",
+    "commit": "3ad6982eedc13334630512852d879357dced2a59",
+    "format_version": 5
+  },
+  "course": {
+    "name": "鈴鹿東コース",
+    "lap_m": 2234.0,
+    "laps": 8,
+    "limit_s": 2536.7,
+    "guard_kmh": 21.0,
+    "v_max_zones_m": [
+      [
+        1914,
+        1000,
+        75.0
+      ]
+    ],
+    "coast_only_zones_m": [
+      [
+        1533,
+        1652
+      ],
+      [
+        1914,
+        740
+      ]
+    ],
+    "crest_cut": [
+      {
+        "from_m": 1300,
+        "crest_m": 1533,
+        "target_kmh": 14.0,
+        "restart_kmh": 3.0
+      },
+      {
+        "from_m": 1780,
+        "crest_m": 1916,
+        "target_kmh": 10.0,
+        "restart_kmh": 3.0
+      }
+    ]
+  },
+  "vehicle": {
+    "_source": "fit-coast: 2024 年鈴鹿本番 LOG0277（乾いた路面、惰行 29 区間）。頂上からの長い惰行（1,300 m 以上）を終速 1〜8 km/h の差で再現する。2026 年全国大会 決勝（もてぎ、乾）の crr 0.00171・k_aero 0.000429 は抵抗が約 15% 大きく、感度の「走行抵抗 +20%」に入る",
+    "crr": 0.00107,
+    "k_aero": 0.000395,
+    "mass_kg": 105.0
+  },
+  "burn": {
+    "_source": "fuel_ml_s は 2026/09/26 ドラム LOG0645（もてぎ 2026 と同じ）。accel_real は 2026 年全国大会 決勝 LOG0672 の fit-accel（決勝の係数で勾配と走行抵抗を足し戻した値）",
+    "inertia_kg": 105.0,
+    "speed_kmh": [
+      10,
+      14,
+      18,
+      22,
+      26,
+      30,
+      34,
+      38,
+      42
+    ],
+    "fuel_ml_s": [
+      0.0568,
+      0.0573,
+      0.0586,
+      0.0624,
+      0.0683,
+      0.0731,
+      0.0772,
+      0.0796,
+      0.08
+    ],
+    "accel_real_kmh": [
+      10,
+      14,
+      18,
+      22,
+      26,
+      30,
+      34,
+      38,
+      42
+    ],
+    "accel_real": [
+      1.232,
+      1.015,
+      0.841,
+      0.932,
+      0.828,
+      0.741,
+      0.668,
+      0.528,
+      0.421
+    ],
+    "cut_lag_s": 0.5,
+    "drum_decel": 0.5,
+    "drum_loss_fraction": 0.5
+  },
+  "restart": {
+    "fuel_ml": 0.03,
+    "delay_s": 1.6
+  },
+  "variants": {
+    "rain": {
+      "_comment": "雨の路面。走行抵抗はもてぎ 2026 の練習走行（雨）、速度の上限は 2025・2026 年の雨の鈴鹿で抑えた速さ",
+      "course": {
+        "v_max_zones_m": [
+          [
+            1914,
+            1000,
+            55.0
+          ]
+        ],
+        "pace_s_per_kmh": 1.0
+      },
+      "vehicle": {
+        "crr": 0.00281,
+        "k_aero": 0.000309
+      }
+    }
+  }
+}

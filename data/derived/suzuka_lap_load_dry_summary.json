@@ -1,0 +1,56 @@
+{
+ "condition": "dry",
+ "mass_kg": 105.0,
+ "meq_kg": 105.0,
+ "loss": {
+  "c0": 0,
+  "c1": 0,
+  "c2": 0
+ },
+ "lap_m": 2234.3,
+ "lap_s": 225.5,
+ "v_min_kmh": 9.5,
+ "v_max_kmh": 73.4,
+ "grade_max_pct": 7.55,
+ "grade_min_pct": -5.74,
+ "alt_range_m": [
+  17.2,
+  51.0
+ ],
+ "burns": [
+  {
+   "from_m": 1314,
+   "to_m": 1415,
+   "v_from_kmh": 18.3,
+   "v_to_kmh": 33.3,
+   "dur_s": 13.5,
+   "grade_mean_pct": 4.7
+  },
+  {
+   "from_m": 1704,
+   "to_m": 1847,
+   "v_from_kmh": 18.6,
+   "v_to_kmh": 28.7,
+   "dur_s": 20.3,
+   "grade_mean_pct": 6.8
+  }
+ ],
+ "crest_speed_kmh": {
+  "1533": 13.8,
+  "1916": 9.6
+ },
+ "fuel_ecu_ml_per_lap": 2.36,
+ "F_cmd_N": [
+  -54.2,
+  81.1
+ ],
+ "P_cmd_W": [
+  -590,
+  858
+ ],
+ "absorb_time_pct": 54,
+ "energy_absorb_kJ": 44.1,
+ "energy_motoring_kJ": 23.2,
+ "F_drive_max_N": 97.8,
+ "dFdt_max_N_per_s": 32.8
+}
