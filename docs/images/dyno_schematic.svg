@@ -31,7 +31,7 @@
   <!-- ===================== ① 機械構成 ===================== -->
   <rect class="panel" x="16" y="16" width="1368" height="584" rx="10"/>
   <text class="title" x="36" y="50">① 機械構成（上から見た概略・縮尺なし）</text>
-  <text class="sub" x="36" y="72">ローラ φ105 × 2 → チェーン 2 段（全体 2.105 倍に増速）→ フライホイール軸 → 同軸のモーター（揺動支持）→ 反トルクを TP-20KCE で台へ</text>
+  <text class="sub" x="36" y="72">ローラ φ105 × 2 → チェーン 2 段（40:19 と 42:42、全体 2.105 倍に増速）→ フライホイール軸 → 同軸のモーター（揺動支持）→ 反トルクを TP-20KCE で台へ</text>
 
   <!-- ガード -->
   <rect x="566" y="206" width="236" height="358" fill="none" stroke="#e08a00" stroke-width="1.5" stroke-dasharray="8 5" rx="6"/>
@@ -50,8 +50,8 @@
   <rect class="brg" x="532" y="239" width="12" height="22"/>
   <rect class="roller" x="330" y="233" width="180" height="34" rx="4"/>
   <text class="lbl" x="448" y="292">駆動ローラ φ105</text>
-  <rect class="spk" x="596" y="222" width="8" height="56"/>
-  <text class="sm" x="612" y="266">42T</text>
+  <rect class="spk" x="596" y="223" width="8" height="54"/>
+  <text class="sm" x="612" y="266">40T</text>
   <!-- エンコーダー -->
   <rect x="178" y="236" width="84" height="28" fill="#e8f0fb" stroke="#2c6fbb" rx="4"/>
   <text class="sm" x="185" y="255">エンコーダー</text>
@@ -65,22 +65,22 @@
   <line class="axle" x1="562" y1="350" x2="700" y2="350"/>
   <rect class="brg" x="566" y="339" width="12" height="22"/>
   <rect class="brg" x="680" y="339" width="12" height="22"/>
-  <rect class="spk" x="596" y="322" width="8" height="56"/>
-  <rect class="spk" x="636" y="325" width="8" height="50"/>
-  <text class="sm" x="570" y="396">42T</text>
-  <text class="sm" x="650" y="334">40T</text>
+  <rect class="spk" x="596" y="332" width="8" height="36"/>
+  <rect class="spk" x="636" y="322" width="8" height="56"/>
+  <text class="sm" x="570" y="396">19T</text>
+  <text class="sm" x="650" y="334">42T</text>
   <text class="sm" x="706" y="346">中間軸（P203）</text>
   <!-- チェーン 1・2 -->
   <rect x="597" y="250" width="6" height="100" fill="url(#chain)"/>
-  <text class="sm" x="612" y="306">チェーン 1（1:1）</text>
+  <text class="sm" x="612" y="306">チェーン 1（40:19 = 2.105 倍）</text>
   <rect x="637" y="350" width="6" height="120" fill="url(#chain)"/>
-  <text class="sm" x="380" y="414">チェーン 2（40:19 = 2.105 倍）</text>
+  <text class="sm" x="430" y="414">チェーン 2（42:42 = 1:1）</text>
   <line class="lead" x1="572" y1="410" x2="634" y2="410"/>
 
   <!-- フライホイール軸 -->
   <line class="axle" x1="624" y1="470" x2="1146" y2="470"/>
-  <rect class="spk" x="636" y="452" width="8" height="36"/>
-  <text class="sm" x="626" y="506">19T</text>
+  <rect class="spk" x="636" y="442" width="8" height="56"/>
+  <text class="sm" x="626" y="512">42T</text>
   <rect class="brg" x="676" y="459" width="12" height="22"/>
   <rect class="brg" x="768" y="459" width="12" height="22"/>
   <rect x="716" y="396" width="14" height="148" fill="#9a9a9a" stroke="#555"/>
@@ -151,8 +151,8 @@
   <text class="num" x="868" y="232">　　　　　許容過負荷 120%（2.4 N·m ＝ 96 N）、最高 4,000 rpm</text>
   <text class="num" x="868" y="254">鈴鹿 1 周の負荷: 吸収 +81 N ／ 力行 −54 N、+858 ／ −590 W</text>
   <text class="num" x="868" y="276">現行の損失: 30 km/h で 44 N（実走の約 10 倍）</text>
-  <text class="sm" x="868" y="302" fill="#b03a2e">※ チェーンの歯数の並び（42T・40T・19T の位置）は、回転マスとの</text>
-  <text class="sm" x="868" y="320" fill="#b03a2e">　 整合から推定。実物で要確認</text>
+  <text class="sm" x="868" y="302">スプロケット: ローラ 40T → 中間軸 19T（2.105 倍）、</text>
+  <text class="sm" x="868" y="320">　　　　　　 中間軸 42T → フライホイール 42T（1:1）</text>
 
   <!-- ===================== ② 電気・制御 ===================== -->
   <rect class="panel" x="16" y="616" width="1368" height="448" rx="10"/>
