@@ -31,11 +31,11 @@
   <!-- ===================== ① 機械構成 ===================== -->
   <rect class="panel" x="16" y="16" width="1368" height="584" rx="10"/>
   <text class="title" x="36" y="50">① 機械構成（上から見た概略・縮尺なし）</text>
-  <text class="sub" x="36" y="72">ローラ φ105 × 2 → チェーン 2 段（40:19 と 42:42、全体 2.105 倍に増速）→ フライホイール軸 → 同軸のモーター（揺動支持）→ 反トルクを TP-20KCE で台へ</text>
+  <text class="sub" x="36" y="72">ローラ φ105 × 2 → 歯付きベルト 1 段（2.3〜2.5 倍に増速）→ フライホイールとモーターを載せた 1 本の軸 → 反トルクを TP-20KCE で台へ</text>
 
   <!-- ガード -->
-  <rect x="566" y="206" width="236" height="358" fill="none" stroke="#e08a00" stroke-width="1.5" stroke-dasharray="8 5" rx="6"/>
-  <text class="sm" x="574" y="224" fill="#b06a00">ガード（チェーン・フライホイール）</text>
+  <rect x="560" y="206" width="236" height="358" fill="none" stroke="#e08a00" stroke-width="1.5" stroke-dasharray="8 5" rx="6"/>
+  <text class="sm" x="742" y="224" fill="#b06a00">ガード</text>
 
   <!-- フリーローラ -->
   <line class="axle" x1="300" y1="150" x2="542" y2="150"/>
@@ -50,8 +50,8 @@
   <rect class="brg" x="532" y="239" width="12" height="22"/>
   <rect class="roller" x="330" y="233" width="180" height="34" rx="4"/>
   <text class="lbl" x="448" y="292">駆動ローラ φ105</text>
-  <rect class="spk" x="596" y="223" width="8" height="54"/>
-  <text class="sm" x="612" y="266">40T</text>
+  <rect x="590" y="222" width="20" height="56" fill="#7f9db8" stroke="#3b5a78" rx="2"/>
+  <text class="sm" x="618" y="262">プーリー 40T（HTD 5M）</text>
   <!-- エンコーダー -->
   <rect x="178" y="236" width="84" height="28" fill="#e8f0fb" stroke="#2c6fbb" rx="4"/>
   <text class="sm" x="185" y="255">エンコーダー</text>
@@ -61,31 +61,26 @@
   <rect x="405" y="112" width="30" height="176" rx="13" fill="#2b2b2b" opacity="0.88"/>
   <text class="lbl" x="340" y="205">駆動輪 →</text>
 
-  <!-- 中間軸 -->
-  <line class="axle" x1="562" y1="350" x2="700" y2="350"/>
-  <rect class="brg" x="566" y="339" width="12" height="22"/>
-  <rect class="brg" x="680" y="339" width="12" height="22"/>
-  <rect class="spk" x="596" y="332" width="8" height="36"/>
-  <rect class="spk" x="636" y="322" width="8" height="56"/>
-  <text class="sm" x="570" y="396">19T</text>
-  <text class="sm" x="650" y="334">42T</text>
-  <text class="sm" x="706" y="346">中間軸（P203）</text>
-  <!-- チェーン 1・2 -->
-  <rect x="597" y="250" width="6" height="100" fill="url(#chain)"/>
-  <text class="sm" x="612" y="306">チェーン 1（40:19 = 2.105 倍）</text>
-  <rect x="637" y="350" width="6" height="120" fill="url(#chain)"/>
-  <text class="sm" x="430" y="414">チェーン 2（42:42 = 1:1）</text>
-  <line class="lead" x1="572" y1="410" x2="634" y2="410"/>
+  <!-- 歯付きベルト 1 段 -->
+  <rect x="594" y="250" width="12" height="220" fill="#3a3a3a" opacity="0.75"/>
+  <text class="bt" x="618" y="320">歯付きベルト 1 段</text>
+  <text class="sm" x="618" y="340">増速 2.3〜2.5 倍</text>
+  <text class="sm" x="618" y="358">（40T/17T ≒ 2.35、40T/16T = 2.5）</text>
+  <circle cx="578" cy="398" r="10" fill="#e6e6e6" stroke="#555" stroke-width="1.5"/>
+  <text class="sm" x="484" y="402">テンショナー</text>
 
-  <!-- フライホイール軸 -->
-  <line class="axle" x1="624" y1="470" x2="1146" y2="470"/>
-  <rect class="spk" x="636" y="442" width="8" height="56"/>
-  <text class="sm" x="626" y="512">42T</text>
-  <rect class="brg" x="676" y="459" width="12" height="22"/>
-  <rect class="brg" x="768" y="459" width="12" height="22"/>
-  <rect x="716" y="396" width="14" height="148" fill="#9a9a9a" stroke="#555"/>
-  <text class="sm" x="576" y="586">フライホイール φ300 × t10.5（推定）</text>
-  <text class="sm" x="694" y="388">P204</text>
+  <!-- フライホイール・モーターの軸（1 本） -->
+  <line class="axle" x1="580" y1="470" x2="1146" y2="470"/>
+  <rect x="590" y="456" width="20" height="28" fill="#7f9db8" stroke="#3b5a78" rx="2"/>
+  <text class="sm" x="566" y="506">16〜17T</text>
+  <rect class="brg" x="636" y="459" width="12" height="22"/>
+  <rect class="brg" x="770" y="459" width="12" height="22"/>
+  <rect x="702" y="414" width="14" height="112" fill="#9a9a9a" stroke="#555"/>
+  <text class="sm" x="660" y="406">フライホイール（小径化）</text>
+  <text class="sm" x="566" y="548">非接触シールの軸受</text>
+  <line class="lead" x1="642" y1="482" x2="628" y2="534"/>
+  <line class="lead" x1="776" y1="482" x2="690" y2="534"/>
+  <text class="sm" x="566" y="586">フライホイールの慣性 0.046〜0.055 kg·m²（モーターの回転子を含めて 105 kg 相当に合わせる）</text>
 
   <!-- カップリング（フライホイール軸 → モーター軸） -->
   <rect x="804" y="458" width="18" height="24" fill="#c9c9c9" stroke="#555" rx="3"/>
@@ -95,17 +90,17 @@
   <rect x="840" y="430" width="124" height="80" fill="#dce9f7" stroke="#2c6fbb" stroke-width="2" rx="6"/>
   <text class="bt" x="856" y="466" fill="#1d4f8c">モーター</text>
   <text class="sm" x="852" y="486">48 V・1 kW 級</text>
-  <text class="sm" x="852" y="502">9,000 rpm 以上</text>
+  <text class="sm" x="852" y="502">10,100 rpm 以上</text>
   <rect x="968" y="452" width="10" height="36" fill="#3d6b5a" stroke="#22443a"/>
-  <text class="sm" x="818" y="546">揺動支持の軸受</text>
-  <line class="lead" x1="831" y1="490" x2="846" y2="532"/>
-  <line class="lead" x1="973" y1="490" x2="890" y2="532"/>
+  <text class="sm" x="830" y="546">揺動支持の軸受</text>
+  <line class="lead" x1="831" y1="490" x2="852" y2="532"/>
+  <line class="lead" x1="973" y1="490" x2="900" y2="532"/>
 
   <!-- トルクアームとストッパー -->
   <line x1="930" y1="430" x2="930" y2="372" stroke="#1d4f8c" stroke-width="5"/>
   <line x1="930" y1="372" x2="972" y2="372" stroke="#1d4f8c" stroke-width="5"/>
   <rect x="978" y="356" width="14" height="32" fill="url(#hatch)" stroke="#555"/>
-    <text class="sm" x="996" y="370">過負荷ストッパー ±2.3 N·m</text>
+  <text class="sm" x="996" y="370">過負荷ストッパー ±2.3 N·m</text>
   <text class="sm" x="996" y="386">すき間 約 1.2 mm（調整ねじ）</text>
 
   <!-- FC-2B → TP-20KCE → FC-2B → 台 -->
@@ -138,21 +133,21 @@
   <circle cx="196" cy="510" r="19" fill="#d6d6d6" stroke="#555" stroke-width="1.5"/>
   <text class="sm" x="72" y="548">フリー</text>
   <text class="sm" x="168" y="548">駆動</text>
-  <text class="sm" x="52" y="568">接触 2 か所＝損失の一因</text>
+  <text class="sm" x="52" y="568">駆動輪は 2 本の間に収まる</text>
   <path d="M104,394 a54,54 0 0 1 40,-24" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#arR)"/>
 
   <!-- 主要な数値 -->
   <rect x="852" y="92" width="516" height="244" fill="#fff" stroke="#bbb" rx="8"/>
-  <text class="bt" x="868" y="118">主要な数値</text>
+  <text class="bt" x="868" y="118">主要な数値（増速比 n = 2.3〜2.5）</text>
   <text class="num" x="868" y="144">回転マス 105 kg 相当（ローラ軸 0.289 kg·m²）＝ 車両質量</text>
-  <text class="num" x="868" y="166">増速比 2.105（ローラ 1 回転でフライホイール・モーター 2.105 回転）</text>
-  <text class="num" x="868" y="188">80 km/h: ローラ 4,040 rpm ／ フライホイール・モーター 8,510 rpm</text>
-  <text class="num" x="868" y="210">TP-20KCE: 2 N·m ＝ ローラ表面 80 N、2.3 N·m（ストッパー）＝ 92 N</text>
-  <text class="num" x="868" y="232">　　　　　許容過負荷 120%（2.4 N·m ＝ 96 N）、最高 4,000 rpm</text>
+  <text class="num" x="868" y="166">増速比 2.3〜2.5（ベルト 1 段。例 40T/17T、40T/16T）</text>
+  <text class="num" x="868" y="188">80 km/h: ローラ 4,040 rpm ／ 軸 9,300〜10,100 rpm</text>
+  <text class="num" x="868" y="210">TP-20KCE: 2 N·m ＝ ローラ表面 88〜95 N、2.3 N·m ＝ 101〜110 N</text>
+  <text class="num" x="868" y="232">　　　　　許容過負荷 120%、最高 4,000 rpm（回さないので制約なし）</text>
   <text class="num" x="868" y="254">鈴鹿 1 周の負荷: 吸収 +81 N ／ 力行 −54 N、+858 ／ −590 W</text>
-  <text class="num" x="868" y="276">現行の損失: 30 km/h で 44 N（実走の約 10 倍）</text>
-  <text class="sm" x="868" y="302">スプロケット: ローラ 40T → 中間軸 19T（2.105 倍）、</text>
-  <text class="sm" x="868" y="320">　　　　　　 中間軸 42T → フライホイール 42T（1:1）</text>
+  <text class="num" x="868" y="276">損失: 現行（チェーン 2 段）30 km/h で 44 N → 目標 10 N 以下</text>
+  <text class="sm" x="868" y="302">現行からの変更: チェーン 2 段と中間軸をなくす、軸受を非接触シールに、</text>
+  <text class="sm" x="868" y="320">　　　　　　　　 フライホイールを小径化（慣性を合わせ、風損も減らす）</text>
 
   <!-- ===================== ② 電気・制御 ===================== -->
   <rect class="panel" x="16" y="616" width="1368" height="448" rx="10"/>
@@ -178,7 +173,7 @@
 
   <rect x="830" y="676" width="200" height="64" fill="#dce9f7" stroke="#2c6fbb" stroke-width="2" rx="8"/>
   <text class="bt" x="844" y="702" fill="#1d4f8c">モーター</text>
-  <text class="bs" x="844" y="722">フライホイール軸に同軸</text>
+  <text class="bs" x="844" y="722">フライホイールと同じ軸</text>
 
   <rect x="1090" y="676" width="200" height="64" fill="#fde7c8" stroke="#d07a00" stroke-width="2" rx="8"/>
   <text class="bt" x="1104" y="702" fill="#8a4b00">TP-20KCE</text>
@@ -253,5 +248,5 @@
   <text class="bt" x="52" y="980">負荷の指令（R-C）</text>
   <text class="sm" x="52" y="1000">F = M·g·(Crr + sinθ(s)) + M·k·v²</text>
   <text class="sm" x="52" y="1018">　 + (M − M_eq)·a − F_loss(v)</text>
-  <text class="sm" x="52" y="1040">T_motor = F · 0.0525 m ÷ 2.105</text>
+  <text class="sm" x="52" y="1040">T_motor = F · 0.0525 m ÷ n（2.3〜2.5）</text>
 </svg>
